@@ -1,4 +1,4 @@
-from WrapperFunction.main import app
+from WrapperFunction.myapp import app
 from WrapperFunction.myjinja import origem
 from fastapi.staticfiles import StaticFiles
 
