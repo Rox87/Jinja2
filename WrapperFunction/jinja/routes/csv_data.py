@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 from fastapi.responses import HTMLResponse
 import csv
 async def my_csv():
-    '''jinja2 loading a csv file'''
+    '''Jinja2 from a csv file'''
     # Crie um ambiente Jinja2 e especifique o diretório dos templates
     env = Environment(loader=FileSystemLoader('.'))
 

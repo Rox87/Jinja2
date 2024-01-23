@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 from fastapi.responses import HTMLResponse
 import sqlite3
 async def my_sqlite():
-    '''Jinja reading a sqlite database'''
+    '''Jinja2 from a sqlite database'''
     # Crie um ambiente Jinja2 e especifique o diretório dos templates
     env = Environment(loader=FileSystemLoader('.'))
 

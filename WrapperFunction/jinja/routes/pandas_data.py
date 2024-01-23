@@ -1,19 +1,18 @@
 from jinja2 import Environment, FileSystemLoader
 from fastapi.responses import HTMLResponse
-import json
-async def my_json():
-    '''Jinja2 loading a json file'''
+import pandas as pd
+async def my_pandas():
+    '''Jinja2 from a parquet file with pandas dataframe'''
     # Crie um ambiente Jinja2 e especifique o diretório dos templates
     # Step 1: Read Parquet file using Pandas
-    with open('data/cities_sample.json', 'r') as f:
-        data = json.loads(f.read())
+    df = pd.read_parquet('data/cities_sample.parquet')
 
     # Step 2: Load Jinja2 environment and template
     env = Environment(loader=FileSystemLoader('.'))
-    template = env.get_template('templates/cities_json.html')
+    template = env.get_template('templates/cities_dataframe.html')
 
     # Step 3: Render the template with the data
-    html_content = template.render(data=data)
+    html_content = template.render(data=df)
 
     # Step 4: Print or save the rendered content
     return HTMLResponse(content=html_content, status_code=200)
