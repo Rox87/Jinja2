@@ -1,12 +1,5 @@
-# a fastapi in WrapperFunction can be run independely or inside a azure function
+# FAST API
+https://www.notion.so/FASTAPI-d4ac7056c79042c9b4485d90ff31ddb5?pvs=4
 
-# to run fastapi with poetry
-- poetry run uvicorn WrapperFunction:app
-
-# 4 origens e 4 templates
-- CSV
-- JSON
-- PANDAS
-- SQLITE
-
-
+# JINJA2
+https://www.notion.so/JINJA2-67e354f78f9546d99264fb2c3bc59ad0?pvs=4
