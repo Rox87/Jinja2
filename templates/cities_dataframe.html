@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+{% for index, row in data.iterrows() %}
+<tr>
+    <td>{{ row['country'] }} </td>
+    <td>{{ row['city'] }} </td>
+<br>
+{% endfor %}

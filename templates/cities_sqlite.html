@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+{% for item in data %}
+<tr>
+    {% for i in range(item|length) %}
+    <td>{{ item[i] }} </td>
+    {% endfor %}
+</tr>
+<br>
+{% endfor %}

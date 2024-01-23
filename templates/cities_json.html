@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+{% for item in data['country'] %}
+<tr>
+    {% for value in data.values() %}
+    <td>{{ value[item] }} </td>
+    {% endfor %}
+</tr>
+<br>
+{% endfor %}

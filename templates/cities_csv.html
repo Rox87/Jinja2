@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+{% for item in data %}
+<tr>
+    <td>{{ item.country }} </td><td> {{ item.city }} </td>
+</tr>
+<br>
+{% endfor %}
