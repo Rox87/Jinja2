@@ -3,6 +3,10 @@
 # to run fastapi with poetry
 - poetry run uvicorn WrapperFunction:app
 
-
+# 4 origens e 4 templates
+- CSV
+- JSON
+- PANDAS
+- SQLITE
 
 
